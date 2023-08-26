@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.header {
+    background-color: #0543ca;
+    color: white;
+    padding: 10px 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center; /* Centrar el contenido en pantallas pequeñas */
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas estrechas */
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px; 
+    flex-wrap: wrap; 
+}
+
+.nav-item {
+    font-size: 15px; 
+    flex: 1; 
+    max-width: 150px; 
+    text-align: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    display: block; 
+}
+
+.nav-link:hover {
+    color: lightgray;
+}
