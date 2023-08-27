@@ -1,0 +1,85 @@
+/* Estilos para el contenedor principal */
+.conteiner-task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Añadido para espacio entre filtro, tabla y botones */
+    min-height: 100vh;
+  }
+  
+  /* Estilos para el filtro */
+  .filter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .label-filter {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .Button-filter {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para la tabla de tareas */
+  .table-task {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .table-task table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-task th,
+  .table-task td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table-task th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  /* Estilos para las filas impares */
+  .table-task tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Estilos para las filas pares */
+  .table-task tr:nth-child(even) {
+    background-color: #fff;
+  }
+  
+  /* Estilos para el contenedor de botones */
+  .Buttons-container {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Asegura que los botones se extiendan por todo el ancho */
+  }
+  
+  /* Estilos para los botones */
+  .Button-event {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px; /* Espacio entre botones */
+  }
