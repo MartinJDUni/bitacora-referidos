@@ -52,9 +52,10 @@
 }
   
 .table-task {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
+   /* Establece una altura máxima para el contenedor de la tabla */
+  max-height: 300px; /* Ajusta según tus necesidades */
+  /* Hacer que el contenedor de la tabla sea desplazable cuando el contenido exceda la altura máxima */
+  overflow-y: auto;
 }
   
   

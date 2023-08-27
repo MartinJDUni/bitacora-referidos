@@ -4,6 +4,14 @@ import TableTask from "@/components/tabletask";
 const data = [
     { dato1: 'Seguros', dato2: 'Seguros con las casas', dato3: 'Activo' },
     { dato1: 'Tarjetas', dato2: 'solicitud de tarjetas de crédito', dato3: 'Activo' },
+    { dato1: 'Seguros', dato2: 'Seguros con las casas', dato3: 'Activo' },
+    { dato1: 'Tarjetas', dato2: 'solicitud de tarjetas de crédito', dato3: 'Activo' },
+    { dato1: 'Seguros', dato2: 'Seguros con las casas', dato3: 'Activo' },
+    { dato1: 'Tarjetas', dato2: 'solicitud de tarjetas de crédito', dato3: 'Activo' },
+    { dato1: 'Seguros', dato2: 'Seguros con las casas', dato3: 'Activo' },
+    { dato1: 'Tarjetas', dato2: 'solicitud de tarjetas de crédito', dato3: 'Activo' },
+    { dato1: 'Seguros', dato2: 'Seguros con las casas', dato3: 'Activo' },
+    { dato1: 'Tarjetas', dato2: 'solicitud de tarjetas de crédito', dato3: 'Activo' },
 ];
 
 
