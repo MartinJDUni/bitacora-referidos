@@ -14,8 +14,6 @@ const data = [
     { dato1: 'Tarjetas', dato2: 'solicitud de tarjetas de crédito', dato3: 'Activo' },
 ];
 
-
-
 function Task() {
     return (
         <div className="container-task">
