@@ -3,31 +3,26 @@ import { useState } from 'react';
 
 function TableTask({ datos }) {
 
-  const [filasMarcadas, setFilasMarcadas] = useState([]);
+  const [RowCheck, setRowCheck] = useState([]);
 
-  const marcarFila = (index) => {
-    const filas = [...filasMarcadas];
-    if (filas.includes(index)) {
-      // Si ya está marcada, desmárcala
-      const indexEncontrado = filas.indexOf(index);
-      filas.splice(indexEncontrado, 1);
+  const CheckRow = (index) => {
+    const Rows = [...RowCheck];
+    if (Rows.includes(index)) {
+      const indexfound = Rows.indexOf(index);
+      Rows.splice(indexfound, 1);
     } else {
-      // Si no está marcada, márcala
-      filas.push(index);
+      Rows.push(index);
     }
-    setFilasMarcadas(filas);
+    setRowCheck(Rows);
   };
 
-  const marcarTodasLasFilas = () => {
-    if (filasMarcadas.length === datos.length) {
-      // Si todas las filas están marcadas, desmárcalas
-      setFilasMarcadas([]);
+  const AllRowCheck = () => {
+    if (RowCheck.length === datos.length) {
+      setRowCheck([]);
     } else {
-      // Si no todas están marcadas, márcalas todas
-      setFilasMarcadas([...Array(datos.length).keys()]);
+      setRowCheck([...Array(datos.length).keys()]);
     }
   };
-
 
   return (
     <table>
@@ -36,8 +31,8 @@ function TableTask({ datos }) {
           <th>
             <input
               type="checkbox"
-              checked={filasMarcadas.length === datos.length}
-              onChange={marcarTodasLasFilas}
+              checked={RowCheck.length === datos.length}
+              onChange={AllRowCheck}
             />
           </th>
           <th>Nombre</th>
@@ -47,12 +42,12 @@ function TableTask({ datos }) {
       </thead>
       <tbody>
         {datos.map((fila, index) => (
-          <tr key={index} className={filasMarcadas.includes(index) ? 'fila-marcada' : ''}>
+          <tr key={index} className={RowCheck.includes(index) ? 'fila-marcada' : ''}>
             <td>
               <input
                 type="checkbox"
-                checked={filasMarcadas.includes(index)}
-                onChange={() => marcarFila(index)}
+                checked={RowCheck.includes(index)}
+                onChange={() => CheckRow(index)}
               />
             </td>
             <td>{fila.dato1}</td>

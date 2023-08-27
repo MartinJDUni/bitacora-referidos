@@ -15,44 +15,29 @@ table th {
   background-color: #f2f2f2;
 }
 
-/* Estilos para filas impares */
 table tr:nth-child(odd) {
   background-color: #f9f9f9;
 }
 
-/* Estilos para filas pares */
 table tr:nth-child(even) {
   background-color: #fff;
 }
 
-/* Estilos para la casilla de verificación maestra (en el encabezado) */
 table th input[type="checkbox"] {
   margin: 0;
 }
 
-/* Estilos para la casilla de verificación en cada fila */
 table td input[type="checkbox"] {
   margin: 0;
 }
 
-/* Estilos para filas marcadas */
 .fila-marcada {
-  background-color: #ffcccb; /* Cambia el color de fondo según tu preferencia */
-  font-weight: bold; /* Cambia el estilo de fuente según tu preferencia */
+  background-color: #ffcccb; 
+  font-weight: bold;
 }
 
-/* Estilos para la casilla de verificación maestra marcada */
 table th input[type="checkbox"]:checked::before {
-  content: '\2713'; /* Símbolo de marca de verificación Unicode */
-  display: inline-block;
-  font-size: 14px;
-  color: #007bff; /* Cambia el color de la marca de verificación según tu preferencia */
-  margin-right: 5px;
-}
-
-/* Estilos para la casilla de verificación en fila marcada */
-table td input[type="checkbox"]:checked::before {
-  content: '\2713';
+  content: '\2713'; 
   display: inline-block;
   font-size: 14px;
   color: #007bff;

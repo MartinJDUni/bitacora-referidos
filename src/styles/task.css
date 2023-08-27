@@ -34,7 +34,7 @@
   
 .Buttons-container {
     display: flex;
-    justify-content: right; /* Esto alinea los elementos en los extremos */
+    justify-content: right;
     align-items: center;
     margin: 10px;
 }
@@ -52,9 +52,7 @@
 }
   
 .table-task {
-   /* Establece una altura máxima para el contenedor de la tabla */
-  max-height: 300px; /* Ajusta según tus necesidades */
-  /* Hacer que el contenedor de la tabla sea desplazable cuando el contenido exceda la altura máxima */
+  max-height: 300px;
   overflow-y: auto;
 }
   
