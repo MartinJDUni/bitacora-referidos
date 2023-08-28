@@ -1,12 +1,12 @@
 import Login from "@/components/login"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-import Task from "@/components/task"
+import Task from "@/pages/task"
 export default function Home() {
   return (
     <main>
-    <Header />
-        <Task />
+    <Header/>
+      <Login/>
     </main>
   )
 }

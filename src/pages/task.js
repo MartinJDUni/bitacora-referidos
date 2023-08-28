@@ -1,6 +1,6 @@
 import React from 'react';
 import TableTask from "@/components/tabletask";
-
+import Header from '@/components/header';
 const data = [
     { dato1: 'Seguros', dato2: 'Seguros con las casas', dato3: 'Activo' },
     { dato1: 'Tarjetas', dato2: 'solicitud de tarjetas de crédito', dato3: 'Activo' },
@@ -17,6 +17,9 @@ const data = [
 function Task() {
     return (
         <div className="container-task">
+            <Header/>
+            <br/>
+            <br/>
             <div className="filter">
                 <input className='label-filter' type="text" name="filter" />
                 <div>
