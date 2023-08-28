@@ -1,41 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+/* Estilos para el header */
 .header {
-    background-color: #0543ca;
-    color: white;
-    padding: 10px 0;
-    font-family: 'Roboto', sans-serif;
-    text-align: center; /* Centrar el contenido en pantallas pequeñas */
-}
-
-.nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas estrechas */
-}
-
-.nav-list {
-    list-style: none;
+    background-color: #007bff; /* Cambia el color de fondo según tus preferencias */
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+    padding: 10px 0; /* Espaciado interno superior e inferior */
+    margin: 0;
+  }
+  
+  /* Estilos para la barra de navegación */
+  .nav {
+    display: flex; /* Muestra los elementos de navegación en línea */
+    justify-content: center; /* Centra los elementos horizontalmente */
+  }
+  
+  /* Estilos para la lista de navegación */
+  .nav-list {
+    list-style: none; /* Quita los puntos de la lista */
+    display: flex; /* Muestra los elementos de navegación en línea */
     padding: 0;
-    display: flex;
-    gap: 15px; 
-    flex-wrap: wrap; 
-}
-
-.nav-item {
-    font-size: 15px; 
-    flex: 1; 
-    max-width: 150px; 
-    text-align: center;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s;
-    display: block; 
-}
-
-.nav-link:hover {
-    color: lightgray;
-}
+  }
+  
+  /* Estilos para los elementos de navegación */
+  .nav-item {
+    margin: 0 10px; /* Espaciado horizontal entre elementos */
+  }
+  
+  /* Estilos para los enlaces de navegación */
+  .nav-link {
+    text-decoration: none; /* Quita la subraya de los enlaces */
+    color: inherit; /* Hereda el color del texto del padre (blanco en este caso) */
+    font-weight: bold; /* Puedes ajustar el peso de la fuente según tus preferencias */
+  }
+  
+  /* Estilos para los enlaces de navegación al pasar el mouse */
+  .nav-link:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el mouse */
+  }

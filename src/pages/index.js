@@ -4,9 +4,9 @@ import Footer from "@/components/footer"
 import Task from "@/pages/task"
 export default function Home() {
   return (
-    <main>
-    <Header/>
-      <Login/>
-    </main>
+    <div>
+      <Header />
+      <Task />
+    </div>
   )
 }
