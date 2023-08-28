@@ -1,7 +1,4 @@
 body{
   background: linear-gradient(to bottom, #0543ca, transparent);
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  margin: 0;
 }
