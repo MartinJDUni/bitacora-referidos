@@ -7,8 +7,7 @@ import HomePage from "./homePage"
 export default function Home() {
   return (
     <main>
-        <Header/>
-          <Login/>
+      <Login/>
     </main>
   )
 }

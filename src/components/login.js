@@ -1,23 +1,36 @@
-import { LazyResult } from 'postcss';
 import React from 'react';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 
-function Login() {
-    return (
-        <div className="form">
-            <form className="sub-form">
-                <div className="upper-form">
-                    <h2 className="h2-form">Inicio de sesion</h2>
-                    <label className="label-form">Usuario</label> <br />
-                    <input className="input-form" type="text" name="username"/> <br />
-                    <label className="label-form">Contraseña</label> <br />
-                    <input className="input-form" type="password" name="username"/> <br />
-                    <div className="btn">
-                        <button type="submit">Iniciar</button> <br />
-                    </div>
-                </div>
-            </form>
+const Login = () => {
+  const router = useRouter();
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    //Aqui se pretende hacer la autent
+    router.push('/homePage');
+  };
+
+  return (
+    <>
+      <Head>
+        <link rel="stylesheet" href="/css/global.css" />
+        <link rel="stylesheet" href="/css/login.css" />
+      </Head>
+      <div className="container">
+        <div className="login-form">
+            <img src="./image/bcr.png" alt="Logo-login" className="logo-login" />
+            
+          <h2>Inicio de Sesión</h2>
+          <form onSubmit={handleLogin}>
+            <input className="input" type="text" placeholder="Username" />
+            <input className="input" type="password" placeholder="Password" />
+            <button className="button" type="submit">Ingresar</button>
+          </form>
         </div>
-    );
-}
+      </div>
+    </>
+  );
+};
 
 export default Login;
