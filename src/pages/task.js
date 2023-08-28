@@ -17,6 +17,7 @@ const data = [
 function Task() {
     return (
         <div className="container-task">
+            <Header/>
             <br/>
             <br/>
             <div className="filter">

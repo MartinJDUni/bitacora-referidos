@@ -22,6 +22,7 @@ function HomePage() {
                     <TableHome datos={data} />
                 </div>
             </div>
+            <br></br>
         </div>
     );
 }
