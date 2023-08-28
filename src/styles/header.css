@@ -1,41 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 .header {
-    background-color: #0543ca;
-    color: white;
+    background-color: #007bff;
     padding: 10px 0;
-    font-family: 'Roboto', sans-serif;
-    text-align: center; /* Centrar el contenido en pantallas pequeñas */
+    width: 100%;
+    height: 8%;
 }
 
-.nav {
+.header-content {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas estrechas */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-and-name {
+    display: flex;
+    align-items: center;
+}
+
+.company-logo {
+    width: 30px; 
+    height: auto;
+    margin-right: 10px; 
+}
+
+.company-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff; 
 }
 
 .nav-list {
     list-style: none;
+    margin: 1;
     padding: 0;
     display: flex;
-    gap: 15px; 
-    flex-wrap: wrap; 
 }
 
 .nav-item {
-    font-size: 15px; 
-    flex: 1; 
-    max-width: 150px; 
-    text-align: center;
+    margin-right: 20px;
 }
 
 .nav-link {
     text-decoration: none;
-    color: white;
-    transition: color 0.3s;
-    display: block; 
+    color: #ffffff;
+    font-weight: bold;
 }
-
 .nav-link:hover {
-    color: lightgray;
+    color: #007bff; 
 }
