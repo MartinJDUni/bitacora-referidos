@@ -1,4 +1,3 @@
-body{
-    background: linear-gradient(to bottom, #0543ca, transparent);
-    margin: 0;
-  }
+.main-home{
+    background-image: linear-gradient(to bottom, #007bff, #ffffff);
+}

@@ -16,23 +16,25 @@ const data = [
 
 function Task() {
     return (
-        <div className="container-task">
-            <Header/>
-            <br/>
-            <br/>
-            <div className="filter">
-                <input className='label-filter' type="text" name="filter" />
-                <div>
-                    <button className="Button-filter">Filtrar</button>
+        <div className="main-task">
+            <Header />
+            <div className="container-task">
+                <br />
+                <br />
+                <div className="filter">
+                    <input className='label-filter' type="text" name="filter" />
+                    <div>
+                        <button className="Button-filter">Filtrar</button>
+                    </div>
                 </div>
-            </div>
-            <div className="Buttons-container">
-                <button className="Button-add">Agregar</button>
-                <button className="Button-edit">Editar</button>
-                <button className="Button-delete">Eliminar</button>
-            </div>
-            <div className="table-task">
-                <TableTask datos={data} />
+                <div className="Buttons-container">
+                    <button className="Button-add">Agregar</button>
+                    <button className="Button-edit">Editar</button>
+                    <button className="Button-delete">Eliminar</button>
+                </div>
+                <div className="table-task">
+                    <TableTask datos={data} />
+                </div>
             </div>
         </div>
     );

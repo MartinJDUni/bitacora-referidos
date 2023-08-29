@@ -11,7 +11,7 @@ const data = [
 
 function HomePage() {
     return (
-        <div>
+        <div className="main-home">
             <Header />
             <br></br>
             <div className='container-homepage'>

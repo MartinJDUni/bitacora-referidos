@@ -7,10 +7,8 @@
 }
 
 .header-content {
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -32,11 +30,17 @@
     color: #ffffff; 
 }
 
+.nav{
+    background-color: #ffffff;
+}
+
 .nav-list {
     list-style: none;
     margin: 1;
     padding: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-item {
@@ -45,7 +49,7 @@
 
 .nav-link {
     text-decoration: none;
-    color: #ffffff;
+    color: #007bffe2;
     font-weight: bold;
 }
 .nav-link:hover {

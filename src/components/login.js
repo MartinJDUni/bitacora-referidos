@@ -13,10 +13,6 @@ const Login = () => {
 
   return (
     <>
-      <Head>
-        <link rel="stylesheet" href="/css/global.css" />
-        <link rel="stylesheet" href="/css/login.css" />
-      </Head>
       <div className="container">
         <div className="login-form">
             <img src="./image/bcr.png" alt="Logo-login" className="logo-login" />

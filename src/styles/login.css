@@ -3,8 +3,8 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: linear-gradient(to bottom, #007bff, #ffffff);
     opacity: 0;
+    background-image: linear-gradient(to bottom, #007bff, #ffffff);
     animation: fadeIn 1s forwards;
   }
   .logo-login {
